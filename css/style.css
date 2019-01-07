@@ -1,0 +1,147 @@
+/*body{
+  background-image: url("./bng.png");
+}*/
+.login_body{
+  margin: 0px;
+  padding: 0px;
+  background: #FEFCFF;
+}
+
+.user_login{
+  color: #2a282b;
+  text-align: center;
+  font-family: Arial;
+  font-weight: normal;
+  margin: 2em auto 0px;
+}
+
+
+.inner-screen{
+  width: 800px;
+  height: 450px;
+  margin: 0px auto;
+  padding-top: 0px;
+}
+
+.form{
+  width: 400px;
+  height: 400px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 40px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.github{
+  text-align: center;
+    margin-bottom: 10px;
+  display: block;
+  background: #1abc9d;
+  width: 292px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+img{
+  width: 75px;
+  height: 70px;
+  margin-left: 160px;
+}
+
+.email_txt,.pwd_txt{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 15px auto;
+  background: #fff;
+  padding: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+
+}
+
+.email_txt,.pwd_txt:focus{
+  border: 2px solid #1abc9d
+}
+.github_button{
+  display: block;
+  background: #1abc9d;
+  width: 314px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.submit_btn{
+      margin-bottom: 10px;
+  display: block;
+  background: #1abc9d;
+  width: 314px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.submit_btn:hover{
+  background: #09cca6
+}
+
+.lost_pwd{
+  text-align: center;
+  font-family: Arial;
+  color: gray;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.lost_pwd:hover{
+  color: #1abc9d;
+}
+
+
+::-webkit-input-placeholder {
+   color: gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: gray;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: gray;  
+}
+
+:-ms-input-placeholder {  
+   color: gray;  
+}
+#error{
+  text-align:center;
+}
+#error1{
+  text-align:center;
+}

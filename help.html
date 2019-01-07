@@ -1,0 +1,227 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/helppage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		    $('.acc h3').click(function(){
+
+				$(this).next('.content').slideToggle();
+				$(this).parent().toggleClass('active');
+				$(this).parent().siblings().children('.content').slideUp();
+				$(this).parent().siblings().removeClass('active');
+	        });
+        });
+	</script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700|Roboto');
+
+body {
+	margin: 0;
+    background-color: #00796b;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    margin: 50px 0 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 70px 0 20px;
+    width: 100%;
+}
+
+.acc h3 {
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.acc h3:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.acc.active h3:after {
+	content: '-';
+}
+
+.content {
+    background-color: #fff;
+    display: none;
+}
+
+.content-inner {
+    padding: 15px;
+}
+
+.content * {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.acc {
+    border-bottom: 1px solid #fff;
+}
+
+
+</style>
+
+<h1>FAQ Section</h1>
+	<div class="container">
+		<!-- Accordion Starts-->
+
+		<div class="acc">
+			<h3>Question 1: Want to Register?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p> This is a simple process you just have to register with your email address and a password.</p>
+					<figure>
+					  <img src="./images/User_registration.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.1 - Registration page</figcaption>
+					</figure>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div class="acc">
+			<h3>Question 2: How to Login?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p> This is one of the social media site. Where users can create an account and post in thier groups.Other users can see the post they can respond back as a comment or like or dislike buttons.</p>
+					<figure>
+					  <img src="./images/Logout.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.2 - Login screen</figcaption>
+					</figure>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Accordian -->
+		<div class="acc">
+			<h3>Question 3: How to Post Messages?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>The point of using this website is to create a platform where users/students can clarify their programming related stuff by simply logging in and posting their query. They can also able to add screen shots and other stuff</p>
+					<figure>
+					  <img src="./images/post_code.PNG" style="width:600px;height:300px;">
+					  <figcaption>Posting codes</figcaption>
+					  <img src="./images/post_text.PNG" style="width:600px;height:300px;">
+					  <figcaption>Posting texts</figcaption>
+					  <img src="./images/post_image.PNG" style="width:600px;height:300px;">
+					  <figcaption>Posting images</figcaption>
+					</figure>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="acc">
+			<h3>Question 4: How to add reactions to the Posts?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>The users can add reactions to the post either Liking the post or disliking the post. This will add more intercativity to the group posts and the useful posts are given more likes.</p>
+					<figure>
+					  <img src="./images/User_comments.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.4 - Adding reactions to the Posts</figcaption>
+					</figure>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="acc">
+			<h3>Question 5: How to add comments to the Posts?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>The users can add comments to the post and continue discussion to the relevant topic, this way user do not have to go through all the unnecessary messages.</p>
+					<figure>
+					  <img src="./images/User_reactions.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.5 - Adding comments to the Posts</figcaption>
+					</figure>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Accordian -->
+		<div class="acc">
+			<h3>Question 6: How to create New groups?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Users are allowed to create new groups.Either the groups could be private or public. The user is able to send invitation to other group members. Other group members can also search for public group and join the group. </p>
+					<figure>
+					  <img src="./images/Group_creation.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.6 - Creating Groups</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div class="acc">
+			<h3>Question 7: How to See other User Profiles?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Users are allowed to see other users profile and general information. Only public groups are visible to other users nut not private groups. Also created reputation matrix depending on the user involvement in the groups. </p>
+					<figure>
+					  <img src="./images/User_profiles.png" style="width:400px;height:300px;">
+					  <figcaption>Fig.7 - Other Users Profiles</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="acc">
+			<h3>Question 8: Want to Logout?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Users are able to logout from website after posting any content or adding reactions to the posts. After doing necessary tasks the user is able to logout by clicking the logout link </p>
+					<figure>
+					  <img src="./images/Logout.png" style="width:600px;height:300px;">
+					  <figcaption>Fig.8 - Successful Logout</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+</html>
+
+
+
+
